@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_first/components/custom_elevatedbutton.dart';
-import 'package:flutter_first/components/custom_textfield.dart';
-import 'package:flutter_first/components/custom_text.dart';
+import 'package:first_flutter/components/custom_elevatedbutton.dart';
+import 'package:first_flutter/components/custom_textfield.dart';
+import 'package:first_flutter/components/custom_text.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});

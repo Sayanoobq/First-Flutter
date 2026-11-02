@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_first/controllers/detail_makanan_controller.dart';
+import 'package:first_flutter/controllers/detail_makanan_controller.dart';
 import 'package:get/get.dart';
 
 class DetailMakananPage extends StatelessWidget {

@@ -1,4 +1,4 @@
-import 'package:flutter_first/models/makanan_model.dart';
+import 'package:first_flutter/models/makanan_model.dart';
 import 'package:get/get.dart';
 
 class DetailMakananController extends GetxController {

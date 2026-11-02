@@ -1,7 +1,7 @@
-import 'package:flutter_first/pages/confirm_registration_page.dart';
-import 'package:flutter_first/pages/detail_makanan_page.dart';
-import 'package:flutter_first/pages/list_makanan_page.dart';
-import 'package:flutter_first/pages/registration_page.dart';
+import 'package:first_flutter/pages/confirm_registration_page.dart';
+import 'package:first_flutter/pages/detail_makanan_page.dart';
+import 'package:first_flutter/pages/list_makanan_page.dart';
+import 'package:first_flutter/pages/registration_page.dart';
 import 'package:get/get.dart';
 
 class Routes {

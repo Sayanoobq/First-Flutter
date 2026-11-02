@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_first/pages/calculator_page.dart';
-import 'package:flutter_first/pages/login_page.dart';
-import 'package:flutter_first/routes.dart';
+//import 'package:first_flutter/pages/calculator_page.dart';
+//import 'package:first_flutter/pages/login_page.dart';
+import 'package:first_flutter/routes.dart';
 import 'package:get/get.dart';
 
 void main() {

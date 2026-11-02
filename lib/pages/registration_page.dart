@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+//import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:flutter_first/components/custom_textfield.dart';
-import 'package:flutter_first/components/custom_elevatedbutton.dart';
-import 'package:flutter_first/components/custom_text.dart';
+import 'package:first_flutter/components/custom_textfield.dart';
+import 'package:first_flutter/components/custom_elevatedbutton.dart';
+import 'package:first_flutter/components/custom_text.dart';
 import '../routes.dart';
 
 class RegistrationPage extends StatefulWidget {

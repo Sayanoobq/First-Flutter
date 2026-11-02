@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_first/controllers/list_makanan_controller.dart';
-import 'package:flutter_first/pages/detail_makanan_page.dart';
-import 'package:flutter_first/routes.dart';
+import 'package:first_flutter/controllers/list_makanan_controller.dart';
+import 'package:first_flutter/routes.dart';
 import 'package:get/get.dart';
 
 
