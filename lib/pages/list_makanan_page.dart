@@ -3,7 +3,6 @@ import 'package:first_flutter/controllers/list_makanan_controller.dart';
 import 'package:first_flutter/routes.dart';
 import 'package:get/get.dart';
 
-
 class ListMakananPage extends StatelessWidget {
   ListMakananPage({super.key});
 
@@ -11,20 +10,30 @@ class ListMakananPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(title: Text("List makanan")),
+    return Scaffold(
+      appBar: AppBar(title: Text("List makanan")),
       body: Container(
         margin: EdgeInsets.all(10),
         child: ListView.builder(
+          scrollDirection: Axis.horizontal, // Geser kanan dan kiri
           itemCount: controller.dataMakanan.length,
-          itemBuilder: (context,index) {
+          itemBuilder: (context, index) {
             final makanan = controller.dataMakanan[index];
-              return InkWell(
-                onTap: () {
-                  Get.toNamed(Routes.detail_makanan, arguments: makanan);
-                },
-                child: ListTile(title: Text(makanan.namaMakanan, style: TextStyle(fontSize: 20)),
-                subtitle: Text(makanan.harga, style: TextStyle(fontSize: 15)),
-                trailing: Icon(Icons.arrow_forward_ios_rounded),
+
+            return InkWell(
+              onTap: () {
+                Get.toNamed(Routes.detail_makanan, arguments: makanan);
+              },
+              child: SizedBox(
+                width: 200,
+                child: ListTile(
+                  title: Text(
+                    makanan.namaMakanan,
+                    style: TextStyle(fontSize: 20),
+                  ),
+                  subtitle: Text(makanan.harga, style: TextStyle(fontSize: 15)),
+                  trailing: Icon(Icons.arrow_forward_ios_rounded),
+                ),
               ),
             );
           },
