@@ -17,9 +17,9 @@ class LoginPage extends StatelessWidget {
       body: Column(
         children: [
           CustomText(
-            text: "Welcome to application",
+            text: "Selamat datang",
             fontSize: 25,
-            color: const Color.fromARGB(255, 46, 9, 182),
+            color: const Color.fromARGB(255, 138, 124, 187),
             fontWeight: FontWeight.bold,
           ),
 
