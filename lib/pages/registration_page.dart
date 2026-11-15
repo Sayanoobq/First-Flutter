@@ -44,7 +44,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
               decoration: const InputDecoration(
                 hintText: "Pilih Jenis Kelamin",
               ),
-              value: selectedGender,
+              initialValue: selectedGender,
               items: ['Laki-laki', 'Perempuan'].map((String val) {
                 return DropdownMenuItem<String>(
                   value: val,
@@ -67,7 +67,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
             CustomElevatedbutton(
               text: "Submit",
               onPressed: () {
-                Get.toNamed(Routes.confirm_registration, arguments: {
+                Get.toNamed(Routes.confirmRegistration, arguments: {
                   "email": txtEmail.text,
                   "jenis_kelamin": selectedGender ?? "Belum dipilih",
                   "no_wa": txtWa.text,

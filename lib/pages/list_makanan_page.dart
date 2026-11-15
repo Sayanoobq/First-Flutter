@@ -22,7 +22,7 @@ class ListMakananPage extends StatelessWidget {
 
             return InkWell(
               onTap: () {
-                Get.toNamed(Routes.detail_makanan, arguments: makanan);
+                Get.toNamed(Routes.detailMakanan, arguments: makanan);
               },
               child: SizedBox(
                 width: 200,

@@ -17,9 +17,9 @@ class LoginPage extends StatelessWidget {
       body: Column(
         children: [
           CustomText(
-            text: "Selamat datang",
+            text: "Welcome to application",
             fontSize: 25,
-            color: const Color.fromARGB(255, 138, 124, 187),
+            color: const Color.fromARGB(255, 46, 9, 182),
             fontWeight: FontWeight.bold,
           ),
 
@@ -39,18 +39,12 @@ class LoginPage extends StatelessWidget {
             ),
           ),
 
-          Obx(() {
-            return controller.isLoading.value
-                ? const CircularProgressIndicator()
-                : CustomElevatedbutton(
-                    text: "Login",
-                    textColor: const Color.fromARGB(255, 30, 175, 44),
-                    fontSize: 20,
-                    onPressed: () {
-                      controller.login();
-                    },
-                  );
-          }),
+          CustomElevatedbutton(
+            text: "Login",
+            textColor: const Color.fromARGB(255, 30, 175, 44),
+            fontSize: 20,
+            onPressed: controller.login,
+          ),
         ],
       ),
     );
