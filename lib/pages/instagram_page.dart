@@ -49,7 +49,28 @@ class InstagramPage extends StatelessWidget {
 
                 const SizedBox(height: 5),
 
-                CustomButton(text: 'Log in', onPressed: controller.login),
+                Obx(  
+                  () => ElevatedButton(
+                    onPressed: controller.isLoading.value ? null : controller.login,
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color(0xFF0866FF),
+                      minimumSize: const Size(double.infinity, 40),
+                    ),
+                    child: controller.isLoading.value
+                        ? const SizedBox(
+                            width: 20,
+                            height: 20,
+                            child: CircularProgressIndicator(
+                              color: Colors.white,
+                              strokeWidth: 2,
+                            ),
+                          )
+                        : const Text(
+                            'Log In',
+                            style: TextStyle(color: Colors.white),
+                          ),
+                  ),
+                ),
 
                 TextButton(
                   onPressed: () {},
